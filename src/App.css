@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://2.bp.blogspot.com/-M7F9E4KY4jQ/VxeojMwsJ-I/AAAAAAACpPs/BrLJEXQwMvkBIK1rLBt0WkvDVoGgHdW3gCLcB/s400/21gif.gif')no-repeat center center/cover;
+
+}
+.card {
+    width: 100%;
+    max-width: 520px;
+    background-color: rgba(115, 92, 23, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgba(64, 32, 224, 0.498);
+    box-shadow: 0 0 10px rgb(21, 20, 101, 0.7);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.card-title{
+    grid-column: span 2;
+    font-size: 35px;
+    margin-bottom: 8px;
+    text-align: center;
+    color:rgba(250, 196, 33, 0.959);
+    text-shadow: 0 0 10px black;
+
+}
+.card_subtitle{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 20px;
+    color:rgba(90, 161, 59);
+    text-shadow: 0 0 10px black;
+}
+.card_second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    text-align: left;
+    
+}
+.second_list{
+    display: grid;
+    gap: 7px;
+}
+.second_item{
+color: #fffa;}
+.second_span{
+    color: rgba(0, 128, 255, 0.483);
+}
+.cad_temperature{
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card_btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #255cc977;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px #0009;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    margin-bottom: 10px;
+}
+.card_btn:hover{
+    transform: scale(1.07);
+    filter: brightness(1.5);
+    transition: transform 100ms ease;
+}
+.card_icon{
+    width: 80%;
+    margin: auto;
+}
+.second_title{
+    color: darkgoldenrod;
+    font-size: 15px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+.third_title{
+    color:  rgba(0, 128, 255, 0.483);
+    font-size: 18px;
+    margin-bottom: 0px;
+
+}
+.temp_title{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-left:  11.8rem;
+    text-shadow: 0 0 10px black;
+
+}
+.result-title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left:  12rem;
+    text-shadow: 0 0 10px black;
+
+}
+.second_item{
+    color: white;
+    font-size: 16px;
+    text-align:left;
+    text-shadow: 0 0 10px black;
+
+}
+.second_spam{
+    color: darkgoldenrod;
+    font-size: 15px;
+    margin:auto;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+.second_item{
+    color:  rgba(0, 128, 255, 0.483);
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.temp_title{
+    color: darkgoldenrod;
+    font-size: 15px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+.progress{
+    position: center;
+    height: 6px;
+    width: 50%;
+    border: 10px solid darkgoldenrod;
+    border-radius: 15px;
+}
+.progress .color{
+    position: center;
+    background-color: #ffffff;
+    width: 0px;
+    height: 5px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+    width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
